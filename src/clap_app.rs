@@ -186,6 +186,8 @@ pub fn build_app(interactive_output: bool) -> ClapApp<'static, 'static> {
                      For example:\n  \
                      '--line-range 30:40' prints lines 30 to 40\n  \
                      '--line-range :40' prints lines 1 to 40\n  \
+                     '--line-range -5:' prints lines from the 5th last to the end of the file\n  \
+                     '--line-range :-2' prints lines 1 to 2nd last line of the file\n  \
                      '--line-range 40:' prints lines 40 to the end of the file",
                 ),
         )
